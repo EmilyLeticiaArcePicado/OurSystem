@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Pequeño Universo 💗</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- 1. INTRO / OPENING SCREEN -->
+    <div id="intro-screen">
+        <div id="intro-bg-hearts"></div>
+        <div class="intro-bg-blob blob-1"></div>
+        <div class="intro-bg-blob blob-2"></div>
+        <div class="intro-bg-blob blob-3"></div>
+        <div class="intro-texture"></div>
+
+        <div id="intro-content">
+            <div class="intro-decor decor-top-left">✨</div>
+            <div class="intro-decor decor-top-right">♡</div>
+            <div class="intro-decor decor-left">🌸</div>
+            <div class="intro-decor decor-right">🎀</div>
+            <div class="intro-decor decor-bottom-left">💕</div>
+            <div class="intro-decor decor-bottom-right">✦</div>
+
+            <div id="intro-title-wrapper">
+                <h2 class="intro-subtitle-top">Un pequeño detalle</h2>
+                <h1 id="intro-title">hecho solo para ti, Mi vida ♡</h1>
+                <div class="title-swoosh">
+                    <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10,15 Q100,2 190,15" fill="none" stroke="#C45C78" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <div id="intro-envelope-wrapper">
+                <div class="envelope-glow"></div>
+                <div id="intro-envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-paper">
+                        <span class="envelope-letter-text">para ti ♡</span>
+                    </div>
+                    <div class="envelope-body"></div>
+                    <div class="heart-seal">
+                        <div class="seal-glow"></div>
+                        💗
+                    </div>
+                </div>
+            </div>
+
+            <p class="intro-hint-text">hay un pequeño recuerdo esperando adentro ♡</p>
+            <button type="button" id="open-letter-btn">Ábrelo ✨</button>
+            <p id="intro-subtitle">hecho con cariño ♡<span class="tiny-sparkle">✨</span></p>
+        </div>
+    </div>
+
+    <!-- MAIN WEBSITE CONTENT -->
+    <div id="main-content" class="hidden">
+        <!-- Global Scroll Love-Path Indicator -->
+        <div id="scroll-love-path" class="scroll-love-path">
+            <div class="scroll-love-line"></div>
+            <div class="scroll-love-progress" id="scroll-love-progress"></div>
+            <div class="scroll-love-heart" id="scroll-love-heart">♥</div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav id="navbar">
+            <ul class="nav-links">
+                <li><a href="#hero" class="active"><span class="nav-icon">♡</span> Inicio</a></li>
+                <li><a href="#story"><span class="nav-icon">✦</span> Historia</a></li>
+                <li><a href="#gallery"><span class="nav-icon">🫂</span> Mi Mundo</a></li>
+                <li><a href="#open-when"><span class="nav-icon">💌</span> Cartas</a></li>
+                <li><a href="#surprise-btn"><span class="nav-icon">✨</span> Más</a></li>
+            </ul>
+        </nav>
+
+        <!-- 2. HERO SECTION -->
+        <section id="hero" class="section hero-bg">
+            <div class="hero-parallax-container">
+                <!-- Parallax Decorations -->
+                <div class="scrap-sticker parallax-el" style="top: 10%; left: 5%;">✨</div>
+                <div class="scrap-sticker parallax-el" style="top: 25%; right: 5%;">🎀</div>
+                <div class="scrap-sticker parallax-el" style="bottom: 10%; left: 8%;">🌷</div>
+                <div class="scrap-sticker parallax-el" style="bottom: 15%; right: 8%;">♡</div>
+
+                <div id="floating-hearts-container"></div>
+                <div class="hero-container">
+                    <h1 class="main-title">Para <span id="her-name-display">Mi Amor </span> <span
+                            class="blinking-heart">💗</span></h1>
+                    <p class="romantic-subtitle">
+                        <span class="heart-icon">💕</span> La única razón por la que siempre soy feliz <span
+                            class="heart-icon">💕</span>
+                        <span class="subtitle-part">Mi Energía</span> <span class="heart-icon">💕</span>
+                        <span class="subtitle-part">Mi vida</span> <span class="heart-icon">💕</span>
+                        <span class="subtitle-part">Mi mundo</span> <span class="heart-icon">💕</span>
+                    </p>
+
+                    <div class="polaroid hero-polaroid parallax-el" data-speed="0.2">
+                        <div class="scrap-tape top-center"></div>
+                        <div class="hero-photo-area">
+                            <img src="./assets/photos/hero.jpeg" class="hero-photo-bg" alt="" aria-hidden="true">
+                            <img src="./assets/photos/hero.jpeg" id="hero-img" class="hero-photo" alt="Recuerdo favorito">
+                        </div>
+                        <div class="polaroid-caption">Una de mis vistas favoritas ♡</div>
+                        <div class="scrap-heart bottom-right">♡</div>
+                    </div>
+
+                    <div class="scrap-note mini-reminder parallax-el" data-speed="0.1">
+                        <h4>💌 Un pequeño recordatorio</h4>
+                        <p> In this live & the next ...♡♡♡</p>
+                        <span class="note-signature">♡</span>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <span class="dancing-text">desliza hacia abajo</span>
+                    <div class="chevron"></div>
+                </div>
+            </div>
+            <svg class="section-divider" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    fill="var(--warm-cream)"></path>
+            </svg>
+        </section>
+
+        <!-- PHOTO STRIP SECTION -->
+        <section id="photo-strip" class="section strip-bg">
+            <div class="strip-container reveal">
+                <div class="photo-strip">
+                    <div class="strip-wrapper" style="transform: rotate(-3deg);">
+                        <div class="scrap-tape top-left"></div>
+                        <img src="./assets/photos/mini1.jpeg" id="mini1" class="strip-img" alt="Recuerdo 1"
+                            onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="strip-fallback" style="display: none;">📸</div>
+                        <p class="dancing-text photo-strip-caption">Mi novia, mi persona favorita 💗</p>
+                    </div>
+                    <div class="strip-wrapper" style="transform: rotate(2deg);">
+                        <div class="scrap-tape top-right"></div>
+                        <img src="./assets/photos/mini2.jpeg" id="mini2" class="strip-img" alt="Recuerdo 2"
+                            onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="strip-fallback" style="display: none;">📸</div>
+                        <p class="dancing-text photo-strip-caption">Todo en ti se siente especial ✨</p>
+                    </div>
+                    <div class="strip-wrapper" style="transform: rotate(-1deg);">
+                        <div class="scrap-tape top-center"></div>
+                        <img src="./assets/photos/mini3.jpeg" id="mini3" class="strip-img" alt="Recuerdo 3"
+                            onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="strip-fallback" style="display: none;">📸</div>
+                        <p class="dancing-text photo-strip-caption">Eres todo lo que quiero, mi mundo 🌷</p>
+                    </div>
+                </div>
+                <p class="dancing-text large-strip-caption">Pequeños fragmentos de la persona que lo es todo para mí ♡</p>
+            </div>
+        </section>
+
+        <!-- 3. OUR LITTLE STORY -->
+        <section id="story" class="section story-bg">
+            <div class="scrap-sticker" style="top: 50px; right: 10%;">💌</div>
+            <h2 class="section-title">Nuestra Pequeña Historia 🌷</h2>
+            <div class="timeline" id="timeline-container">
+                <!-- Timeline items injected by JS -->
+            </div>
+            <div class="section-separator">────── ♡ ──────</div>
+        </section>
+
+        <!-- 4. MEMORY GALLERY -->
+        <section id="gallery" class="section gallery-bg">
+            <h2 class="gallery-section-title">En mi corazón, nunca se desvanecen ♡</h2>
+            <p class="gallery-subtitle">pequeños momentos que vale la pena guardar para siempre</p>
+            <div class="gallery-grid" id="gallery-container">
+                <!-- Gallery items injected by JS -->
+            </div>
+            <svg class="section-divider" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    fill="var(--peach)"></path>
+            </svg>
+        </section>
+
+        <!-- 5. THINGS I APPRECIATE ABOUT YOU -->
+        <section id="little-things" class="section peach-bg">
+            <div class="scrap-sticker" style="top: 20px; left: 10%;">🎀</div>
+            <h2 class="section-title">Pequeñas Cosas Que Te Hacen Especial 💕</h2>
+            <div class="cards-grid" id="little-things-container">
+                <!-- Cards injected by JS -->
+            </div>
+        </section>
+
+
+
+        <!-- 7. WHY YOU MATTER -->
+        <section id="matter" class="section matter-bg">
+            <div class="blurred-blob" style="top: -50px; left: -50px; background: rgba(232, 217, 255, 0.2);"></div>
+            <div class="blurred-blob" style="bottom: -50px; right: -50px; background: rgba(255, 217, 226, 0.2);"></div>
+            <h2 class="section-title reveal" style="color: var(--warm-cream);">Importas Más de Lo Que Crees 🌙💗</h2>
+            <div class="stars-card scrap-note-dark">
+                <div class="scrap-tape top-center tape-light"></div>
+                <div class="matter-content" id="matter-text">
+                    <!-- Text injected by JS -->
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 9. IMPORTANT DATE COUNTER -->
+        <section id="counter" class="section jar-bg">
+            <h2 class="section-title">Desde Nuestro Día Especial 💗</h2>
+            <div class="counter-grid">
+                <div class="counter-card scrap-note">
+                    <span class="counter-number" id="count-days">0</span>
+                    <span class="counter-label">Días</span>
+                </div>
+                <div class="counter-card scrap-note">
+                    <span class="counter-number" id="count-hours">0</span>
+                    <span class="counter-label">Horas</span>
+                </div>
+                <div class="counter-card scrap-note">
+                    <span class="counter-number" id="count-mins">0</span>
+                    <span class="counter-label">Minutos</span>
+                </div>
+                <div class="counter-card scrap-note">
+                    <span class="counter-number" id="count-secs">0</span>
+                    <span class="counter-label">Segundos</span>
+                </div>
+            </div>
+            <p class="dancing-text" style="text-align: center; margin-top: 1.5rem; font-size: 1.4rem;">y sigo
+                contando cada pequeño momento ♡</p>
+        </section>
+
+        <!-- 10. OPEN WHEN... -->
+        <section id="open-when" class="section peach-bg">
+            <h2 class="section-title">Abrir Cuando... 💌</h2>
+            <div class="envelopes-grid" id="open-when-container">
+                <!-- Envelopes injected by JS -->
+            </div>
+        </section>
+
+
+        <!-- 12. & 13. SURPRISE & FOOTER -->
+        <footer class="section footer hero-bg">
+            <p class="footer-text">Gracias por ser parte de tantos recuerdos hermosos. 🌷</p>
+            <p class="footer-subtext dancing-text" style="font-size: 1.5rem;">Este pequeño rincón de internet fue
+                hecho especialmente para ti.</p>
+            <p class="footer-made">Hecho con 💗 <span
+                    style="font-size: clamp(26px, 4vw, 34px); margin-left: 10px; display: inline-block; transform: rotate(10deg); vertical-align: middle;">🧸</span>
+            </p>
+
+            <button class="mystery-btn scrap-btn" id="surprise-btn">Hay algo más... 👀</button>
+        </footer>
+
+        <!-- 14. FINAL LETTER -->
+        <section id="final-letter" class="section final-bg">
+            <!-- Background faint hearts -->
+            <div class="final-bg-heart" style="top: 15%; left: 10%;">♡</div>
+            <div class="final-bg-heart" style="top: 50%; right: 15%;">♡</div>
+            <div class="final-bg-heart" style="bottom: 20%; left: 20%;">♡</div>
+
+            <div class="final-sparkle reveal" style="top: 20%; left: 50%; transition-delay: 0.8s;">✨</div>
+            <div class="final-sparkle reveal" style="top: 30%; right: 20%; transition-delay: 1.0s;">💕</div>
+            <div class="final-sparkle reveal" style="bottom: 40%; left: 10%; transition-delay: 1.2s;">🌷</div>
+
+            <h2 class="gallery-section-title reveal" style="margin-bottom: 2rem;">Para Mi Princesa💗</h2>
+
+            <div class="final-scrap-card scrap-note reveal" style="transition-delay: 0.3s;">
+                <div class="scrap-tape top-center tape-light"></div>
+                <div class="scrap-tape top-left" style="transform: rotate(-25deg); left: -15px; top: -10px;"></div>
+
+                <div class="final-letter-content">
+                    <p class="reveal" style="transition-delay: 0.5s;">De todos los pequeños momentos, recuerdos,
+                        sonrisas e historias que hay aquí, mi parte favorita siempre serás tú. 🌷</p>
+
+                    <p class="reveal" style="transition-delay: 0.7s;">Gracias por hacer que los días comunes se
+                        sientan especiales y por traer felicidad y sentido a este pequeño mundo
+                        nuestro. 💕✨</p>
+
+                    <p class="reveal" style="transition-delay: 0.9s;">Espero que este pequeño rincón de internet
+                        siempre te recuerde lo profundamente valorada, cuidada y especial que eres para mi. 🤍</p>
+
+                    <div class="final-signature reveal" style="transition-delay: 1.1s;">
+                        <p>Con todo mi amor,</p>
+                        <p class="signature-name dancing-text">Tu Novia <span class="signature-heart">💗</span></p>
+                        <p class="signature-ps">siempre apoyándote, siempre a tu lado ♡</p>
+                    </div>
+                </div>
+
+                <!-- Tiny flower/heart decorations near the edges -->
+                <div class="scrap-heart"
+                    style="bottom: 15px; left: 15px; font-size: 1.5rem; transform: rotate(-20deg);">🌸</div>
+                <div class="scrap-heart" style="top: 35%; right: -10px; font-size: 1.5rem; transform: rotate(15deg);">💮
+                </div>
+                <!-- Wax seal style heart -->
+                <div class="wax-seal">💗</div>
+            </div>
+
+            <p class="final-ending-text dancing-text reveal" style="transition-delay: 1.3s;">
+                Esta página puede terminar aquí, pero nuestra hermosa historia sigue ♡, siempre estaré contigo🫂
+            </p>
+        </section>
+
+        <!-- FLOATING MUSIC CONTROL & AUDIO -->
+        <button id="floating-music-btn" class="floating-music-btn hidden" title="nuestra canción ♡">🎵</button>
+        <audio id="background-love-song" preload="auto">
+            <source src="./assets/music/music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="modal hidden">
+        <div class="modal-bg close-lightbox"></div>
+        <div class="lightbox-content">
+            <button class="close-btn close-lightbox">✖</button>
+            <button class="nav-btn prev-btn">◀</button>
+            <div class="lightbox-img-container polaroid">
+                <div class="scrap-tape top-center"></div>
+                <div class="polaroid-img" id="lightbox-img"></div>
+                <div class="polaroid-caption" id="lightbox-caption"></div>
+                <div class="scrap-heart bottom-right">♡</div>
+            </div>
+            <button class="nav-btn next-btn">▶</button>
+        </div>
+    </div>
+
+    <!-- SURPRISE MODAL -->
+    <div id="surprise-modal" class="modal hidden">
+        <div class="modal-bg close-surprise"></div>
+        <div class="surprise-content scrap-note">
+            <div class="scrap-tape top-right"></div>
+            <div class="surprise-text" id="surprise-message"></div>
+            <div class="polaroid surprise-polaroid" style="transform: rotate(-2deg); margin: 1rem 0;">
+                <div class="scrap-tape top-center"></div>
+                <div class="surprise-photo-area">
+                    <img src="./assets/photos/hero.jpeg" class="surprise-photo-bg" alt="" aria-hidden="true">
+                    <img src="./assets/photos/hero.jpeg" id="surprise-img" class="surprise-photo" alt="Recuerdo favorito">
+                </div>
+                <div class="polaroid-caption">♡</div>
+            </div>
+            <button class="primary-btn scrap-btn close-surprise" id="final-heart-btn">💗</button>
+        </div>
+    </div>
+
+    <!-- OPEN WHEN MODAL -->
+    <div id="letter-modal" class="modal hidden">
+        <div class="modal-bg close-letter"></div>
+        <div class="letter-content scrap-note">
+            <div class="scrap-tape top-left"></div>
+            <h3 id="letter-title" class="letter-heading"></h3>
+            <p id="letter-body" class="letter-message"></p>
+
+            <div id="letter-photo-container" class="letter-photo-container"
+                style="display: none; opacity: 0; transform: translateY(10px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                <div class="polaroid letter-polaroid photo-letter-frame"
+                    style="transform: rotate(2deg); cursor: pointer;">
+                    <div class="scrap-tape top-center"></div>
+                    <img src="" id="letter-img" class="letter-photo" alt="Recuerdo">
+                    <div id="letter-photo-caption" class="polaroid-caption dancing-text tiny-caption"></div>
+                    <div class="scrap-heart bottom-right">♡</div>
+                </div>
+            </div>
+
+            <button class="primary-btn scrap-btn close-letter close-letter-btn">Cerrar 💌</button>
+        </div>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div id="cursor-particles" class="desktop-only"></div>
+
+    <!-- 10. MEMORY VIEWER MODAL (Mobile First) -->
+    <div id="memory-viewer-modal" class="hidden" role="dialog" aria-modal="true">
+        <div class="memory-viewer-bg"></div>
+        <div id="memory-viewer-hearts"></div>
+
+        <div class="memory-viewer-header">
+            <span class="memory-viewer-title dancing-text">un pequeño pedazo de nosotros ♡</span>
+            <button class="memory-viewer-close" aria-label="Cerrar visor de recuerdos">&times;</button>
+        </div>
+
+        <div class="memory-viewer-content">
+            <button class="memory-nav-btn prev-memory desktop-only" aria-label="Foto anterior">←</button>
+
+            <div class="memory-polaroid-container" id="memory-polaroid-container">
+                <!-- Sparkles will be injected here -->
+                <div class="polaroid memory-polaroid">
+                    <div class="scrap-tape top-center"></div>
+                    <div class="memory-image-wrapper">
+                        <img id="memory-viewer-img" src="" alt="Recuerdo">
+                        <!-- Double tap heart will be injected here -->
+                    </div>
+                    <div class="memory-caption-wrapper">
+                        <p id="memory-viewer-caption" class="dancing-text"></p>
+                    </div>
+                    <div class="scrap-heart bottom-right" style="font-size: 1rem;">♡</div>
+                </div>
+            </div>
+
+            <button class="memory-nav-btn next-memory desktop-only" aria-label="Foto siguiente">→</button>
+        </div>
+
+        <div class="memory-viewer-footer">
+            <div class="memory-counter">♡ <span id="memory-counter-text">1 / 3</span></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
