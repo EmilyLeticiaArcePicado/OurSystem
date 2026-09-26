@@ -2429,14 +2429,15 @@ p {
     .hero-container h1 {
         font-size: clamp(32px, 9vw, 48px) !important;
     }
-    .hero-photo-area {
-        width: min(88vw, 360px) !important;
-        height: auto !important;
-        aspect-ratio: 4/5 !important;
-    }
     .hero-polaroid {
+        width: min(88vw, 360px) !important;
         transform: rotate(0deg) !important;
         margin: 0 auto !important;
+    }
+    .hero-photo-area {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 4/5 !important;
     }
     .hero-photo, .hero-photo-bg {
         object-fit: contain !important;
